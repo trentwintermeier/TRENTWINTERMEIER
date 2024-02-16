@@ -1,6 +1,6 @@
-toolset {
-	display: none;
-}
+/**
+ * Content
+ */
 
 body {
 	background-color: #fff;
@@ -12,8 +12,7 @@ a:active {
 }
 
 .page a.active {
-	color: rgba(173, 173, 173, 0.8);
-    filter: blur(1px);
+	opacity: .4;
 }
 
 i,
@@ -52,42 +51,35 @@ img {
 ul,
 ol {
 	margin: 0;
-	padding: 0 0 0 2.5em;
+	padding: 0 0 0 1em;
 }
 
 blockquote {
 	margin: 0;
-	padding: 0 0 0 1em;
+	padding: 0 0 0 2em;
 }
 
 hr {
-	background: rgba(0, 0, 0, 0.75);
+	background: rgba(0, 0, 0, 0.8);
 	border: 0;
 	height: 1px;
 	display: block;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 .content img {
 	float: none;
-	margin-bottom: 0;
-    vertical-align: bottom;
-}
-
-[image-gallery="slideshow"] {
-    margin-bottom: 2rem;
+	margin-bottom: .5em;
 }
 
 .gallery_image_caption {
-    margin-top: 0.5rem;
-    margin-bottom: 2.0rem;
-    font-size: 1.0rem;
-	font-weight: normal;
-	color: rgba(0, 0, 0, 0.75);
-	font-family: Mer, Icons;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+	font-weight: 400;
+	color: rgba(0, 34, 255, 0.35);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
 	font-style: normal;
-	line-height: 1.1;	
+	line-height: 1.3;	
 }
 
 /**
@@ -105,23 +97,27 @@ hr {
  */
 
 [data-predefined-style="true"] bodycopy {
-	font-size: 1.0rem;
-	font-weight: normal;
-	color: rgba(0, 0, 0, 0.75);
-	font-family: "Mer", "Noto", Icons;
+	font-size: 2rem;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.85);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Sans Serif', Icons;
 	font-style: normal;
-	line-height: 1.1;
+	line-height: 0.6;
 }
 
 [data-predefined-style="true"] bodycopy a {
-	color: rgba(0, 0, 0, 0.75);
+	color: rgb(0, 0, 0);
+	padding-bottom: 0.1em;
+	border-bottom: 0.0em solid rgba(127, 127, 127, 0.2);
 	text-decoration: none;
 }
 
 [data-predefined-style="true"] bodycopy a:hover {
-  color: rgba(173, 173, 173, 0.8);
-  filter: blur(1px);
+    color: rgba(0, 2, 162, 1);
 }
+	
+
+
 
 bodycopy a.image-link,
 bodycopy a.icon-link,
@@ -129,51 +125,53 @@ bodycopy a.image-link:hover,
 bodycopy a.icon-link:hover {
 	border-bottom: 0;
 	padding-bottom: 0;
+   
 }
 
 [data-predefined-style="true"] h1 {
-	font-family: "Kor", Icons;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 3.2rem;
-	line-height: 1;
-	color: rgba(0, 0, 0, 0.75);
-}
-
-[data-predefined-style="true"] h1 a {
-	color: rgba(0, 0, 0, 0.75);
-}
-
-[data-predefined-style="true"] h2 {
-	font-family: "Diatype Variable", Icons;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
 	font-style: normal;
 	font-weight: 400;
 	padding: 0;
 	margin: 0;
-	color: rgba(0, 0, 0, 0.75);
-	font-size: 2.2rem;
+	font-size: 3rem;
 	line-height: 1.2;
-	font-variation-settings: 'slnt' 0, 'MONO' 0;
+	color: rgba(0, 0, 0, 0.85);
 	}
 
-[data-predefined-style="true"] h2 a {
-	color: rgba(0, 0, 0, 0.75);
+[data-predefined-style="true"] h1 a:hover  {font-style: italic;
+	color: rgba(0, 0, 0, 0.85);
+}
+
+[data-predefined-style="true"] h2 {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	color: rgba(0, 0, 0, 0.85);
+	font-size: 1.3rem;
+	line-height: 1.3;
+	}
+
+[data-predefined-style="true"] h2 a:hover  {font-style: italic;
+	color: rgba(0, 0, 0, 0.85);
 }
 
 [data-predefined-style="true"] small {
 	display: inline-block;
-	font-size: 1rem;
-	line-height: 1.2;
-	font-family: "Monument Grotesk Mono Variable", Icons;
+	font-size: 1.6rem;
+	line-height: 1.3;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Sans Serif', Icons;
 	font-style: normal;
 	font-weight: 400;
-	color: rgba(0, 0, 0, 0.6);
-	font-variation-settings: 'slnt' 0, 'MONO' 1;
+	color: rgb(0, 0, 0);
 }
 
-[data-predefined-style="true"] small a {
-	color: rgba(0, 0, 0, 0.6);
+[data-predefined-style="true"] small a:hover {font-style: italic;;;;
+	color: rgba(0, 2, 162, 1);
 	border-bottom-width: 0em;
+    
 }
 
 /**
@@ -188,6 +186,7 @@ bodycopy a.icon-link:hover {
 .mobile .page,
 [data-css-preset].mobile .page {
 	position: relative;
+	min-height: 10px;
 	max-width: 100%;
 	width: 100%;
 	background-color: transparent /*!page_bgcolor*/;
@@ -196,24 +195,29 @@ bodycopy a.icon-link:hover {
 [data-css-preset] .container {
 	margin-left: auto /*!content_right*/;
 	margin-right: 0 /*!content_right*/;
-	text-align: left /*!text_left*/;
+	text-align: r /*!text_left*/;
 }
 
 [data-css-preset] body {
-	background-color: transparent /*!body_bgcolor*/;
+	background-color: rgb(255, 255, 255)/*!body_bgcolor*/;
 }
 
 [data-css-preset] .container_width {
-	width: 60%/*!content_right*/;
+	width: 100% /*!content_right*/;
 }
 
 [data-css-preset] .content_padding {
-	padding-top: 1.3rem /*!main_margin*/;
-	padding-bottom: 1.3rem /*!main_margin*/;
-	padding-left: 1.3rem /*!main_margin*/;
-	padding-right: 1.3rem /*!main_margin*/;
+	padding-top: 1.1rem/*!main_margin*/;
+	padding-bottom: 1.1rem/*!main_margin*/;
+	padding-left: 1.1rem/*!main_margin*/;
+	padding-right: 1.1rem/*!main_margin*/;
 }
 
+
+[data-css-preset] text-limit {
+	display: inline-block /*!text_width*/;
+	max-width: 66rem/*!text_width*/;
+}
 
 /**
  * Thumbnails
@@ -224,30 +228,27 @@ div[thumbnails] {
 }
 
 [data-css-preset] .thumbnails {
-   	background-color: transparent/*!thumbnails_bgcolor*/;   
+   	background-color: rgba(0, 0, 0, 0)/*!thumbnails_bgcolor*/;   
 }
 
 [data-css-preset] .thumbnails_width {
-    width: 50%/*!thumbnails_width*/;
+    width: 60%/*!thumbnails_width*/;
 }
 
 [data-css-preset] [thumbnails-pad] {
-    padding: 0.25rem/*!thumbnails_padding*/;
+    padding: 0.5rem/*!thumbnails_padding*/;
 }
 
 [data-css-preset] [thumbnails-gutter] {
-    margin-top: -1.5rem/*!thumbnails_padding*/;
-	margin-left: -0.5rem;
-    margin-right: -0.5rem;
-    margin-bottom: -0.5rem;
+    margin: -1rem/*!thumbnails_padding*/;
 }
 
 [data-css-preset] [responsive-layout] [thumbnails-pad] {
-    padding: 0.3rem/*!responsive_thumbnails_padding*/; 
+    padding: 0.5rem/*!responsive_thumbnails_padding*/; 
 }
 
 [data-css-preset] [responsive-layout] [thumbnails-gutter] {
-    margin: -0.6rem/*!responsive_thumbnails_padding*/; 
+    margin: -1rem/*!responsive_thumbnails_padding*/; 
 }
 
 .thumbnails .thumb_image {
@@ -256,68 +257,66 @@ div[thumbnails] {
 }
 
 .thumbnails .title {
-    margin-top: 1.0rem;
-    margin-bottom: 2rem;
-    font-size: 1.0rem;
+    margin-top: 1.2rem;
+    margin-bottom: .3rem;
+    font-size: 1.8rem;
 	font-weight: normal;
 	color: rgba(0, 0, 0, 0.85);
-	font-family: "Mer", Icons;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
 	font-style: normal;
-	line-height: 1.3;
+	line-height: 1.1;
 }
 
 .thumbnails .tags {
-    margin-top: .8rem;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
 	font-weight: 400;
-	color: rgba(0, 0, 0, 0.6);
-	font-family: "Monument Grotesk Mono", Icons;
+	color: rgba(0, 0, 0, 0.35);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
 	font-style: normal;
 	line-height: 1.2;
 }
 
 .thumbnails .tags a {
 	border-bottom: 0;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.35);
     text-decoration: none;
 }
 
 .thumbnails .has_title .tags {
-	margin-top: -1.8rem;
+	margin-top: 0rem;
 }
 
 /**
- * Site Menu Button
+ * Site Menu
  */
 
 [data-css-preset] #site_menu_button {
     color: rgba(0, 0, 0, 0.75);
     line-height: 1;
-    font-size: 25px /*!site_menu_button*/;
+    font-size: 28px /*!site_menu_button*/;
     padding: 6px;
     line-height: 1;
     background: rgba(33, 32, 46, 0);
     position: fixed;
-	right: 2rem /*!site_menu_button*/;
-	top: 1.7rem /*!site_menu_button*/;
+	top: 1rem /*!site_menu_button*/;
+	right: 17rem /*!site_menu_button*/;
 }
 
 body.mobile #site_menu_button {
-	margin-top: -9px;
-    margin-right: -12px;
-    font-size: 20px;
+	margin: 1px;
+    font-size: 34px;
 }
 
 #site_menu_button.custom_icon {
-	width: 30px;
+	width: 40px;
     height: auto;
 }
 
 #site_menu_button.active {
-	display: contents;
+	display: none;
 }
-
 
 /**
  * Site Menu
@@ -359,14 +358,14 @@ body.mobile #site_menu {
 }
 
 #site_menu .close {
-	display: flex;
-	color: rgba(20, 20, 20, 0.95);
+	display: none;
+	color: rgba(255, 255, 255, 0.4);
 	line-height: .85em;
 	font-size: 45px;
 }
 
 body.mobile #site_menu .close {
-	display: flex;
+	display: block;
 	font-size: 50px;
 	line-height: 1em;
 }
@@ -392,18 +391,16 @@ body.mobile #site_menu .close {
     line-height: 1;
     position: fixed;
 	padding: 6px;
-	top: 1rem /*!shop_button*/;
-	left: 1.5rem /*!shop_button*/;
+	top: 2rem /*!shop_button*/;
+	right: 2rem /*!shop_button*/;
 }
 
 #shop_button.text {
-    font-size: 1.6rem;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 0.75);
-	font-family: Diatype, Icons;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
+	font-size: 2rem;
     padding: 0;
-    line-height: 1.3;
-	font-style: normal;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.85);
 }
 
 #shop_button.custom_icon {
@@ -413,7 +410,7 @@ body.mobile #site_menu .close {
 
 body.mobile #shop_button:not(.text) {
 	margin: -6px;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 /*
@@ -428,43 +425,36 @@ body.mobile #shop_button:not(.text) {
 }
 
 .shop_product .price {
-	font-family: Diatype, Icons;
-	font-size: 1.6rem;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
+	font-size: 2rem;
 	line-height: 1;
-	color: rgba(0, 0, 0, 0.75);
+	color: rgba(0, 0, 0, 0.85);
     display: block;
     margin-bottom: 1rem;
-	font-style: normal;
-	font-weight: 400;
 }
 
 .shop_product .dropdown {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
-    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
+    font-size: 1.4rem;
     display: inline-block;
 	width: 100%;
     border: 1px solid rgba(0,0,0,.2);
-    background:  white url(https://static.cargo.site/assets/images/select-line-arrows.svg) no-repeat right;
+    background:  white url(https://static.cargo.site/assets/images/select-arrows.svg) no-repeat right;
     margin-bottom: 1rem;
-    line-height: 1.4;
-    padding: .7rem 2.5rem 0.6rem 1rem;
-	font-style: normal;
-	font-weight: 400;
-    color: rgba(0, 0, 0, 0.75);
+    line-height: 1.2;
+    padding: .7rem 2.5rem .7rem 1rem;
 }
 
 .shop_product .button {
-	font-family: Diatype, Icons;
-	font-size: 1.3rem;
-    background: rgba(0, 0, 0, 0.75);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
+	font-size: 1.4rem;
+    background: rgba(0, 0, 0, 0.7);
     color: rgba(255,255,255,1);
     flex: 0 0 50%;
     text-align: left;
     display: inline-block;
 	line-height: 1;
-    padding: .8rem 1rem 0.8rem;
-	font-style: normal;
-	font-weight: 700;
+    padding: .8rem 1rem .9rem;
 }
 
 /*
@@ -496,11 +486,12 @@ body.mobile .quick-view {
 
 
 [data-css-preset] .quick-view-background {
-	background: rgba(255, 255, 255, 1) /*!quick_view_bgcolor*/;
+	background: rgba(0, 0, 0, 0.85) /*!quick_view_bgcolor*/;
 }
 
 .quick-view-caption {
-	font-family: Diatype, Icons;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-weight: 400;
     transition: 100ms opacity ease-in-out;
     position: absolute;
     bottom: 0;
@@ -508,16 +499,13 @@ body.mobile .quick-view {
     right: 0;
     margin: 3.5rem 0;
     text-align: center;
-    font-size: 1.6rem;
-	font-style: normal;
-	font-weight: 400;
-    line-height: 1.3;
+    font-size: 1.5rem;
 }
 
 .quick-view-caption span {
     padding: 0.5rem 1rem;
     display: inline-block;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,.5);
     color: white;
 }
 
@@ -544,13 +532,13 @@ body.mobile .quick-view {
 .quick-view-navigation .left-arrow .inner-color,
 .quick-view-navigation .right-arrow .inner-color {
     stroke: #fff;
-    stroke-width: 0px;
+    stroke-width: 1.5px;
 }
 
 .quick-view-navigation .left-arrow .outer-color,
 .quick-view-navigation .right-arrow .outer-color {
-    stroke: rgba(0, 0, 0, 0.85);
-    stroke-width: 2px;
+    stroke: rgba(0, 0, 0, 0.6);
+    stroke-width: 2.5px;
 }
 
 .quick-view-navigation .close-button {  
@@ -563,12 +551,13 @@ body.mobile .quick-view {
 
 .quick-view-navigation .close-button .inner-color {
     stroke: #fff;
-    stroke-width: 0px;
+    stroke-width: 1.5px;
 }
 
 .quick-view-navigation .close-button .outer-color {
-    stroke: rgba(0, 0, 0, 0.85);
-    stroke-width: 2px;
+    stroke: #000;
+    stroke-width: 2.5px;
+    opacity: 0.6;
 }
 
 /** 
@@ -585,13 +574,13 @@ body.mobile .quick-view {
 .image-gallery-navigation .left-arrow .inner-color,
 .image-gallery-navigation .right-arrow .inner-color {
     stroke: #fff;
-    stroke-width: 2px;
+    stroke-width: 1.5px;
 }
 
 .image-gallery-navigation .left-arrow .outer-color,
 .image-gallery-navigation .right-arrow .outer-color {
     stroke: rgba(0, 0, 0, 0.6);
-    stroke-width: 3px;
+    stroke-width: 2.5px;
 }
 
 /**
@@ -608,13 +597,13 @@ body.mobile .quick-view {
 .wallpaper-navigation .left-arrow .inner-color,
 .wallpaper-navigation .right-arrow .inner-color {
    stroke: #fff;
-    stroke-width: 2px;
+   stroke-width: 1.5px;
 }
 
 .wallpaper-navigation .left-arrow .outer-color,
 .wallpaper-navigation .right-arrow .outer-color {
     stroke: rgba(0, 0, 0, 0.6);
-    stroke-width: 3px;
+    stroke-width: 2.5px;
 }
 
 
@@ -642,9 +631,9 @@ body.mobile .quick-view {
     outline: 1px solid rgba(0,0,0,0.15);
     color: rgba(0, 0, 0, 0.6);
     background: #fff;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.3;
-	font-family: Diatype, Icons;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Sans Serif", Icons;
     font-style: normal;
     font-weight: 400;
     text-align: left;
@@ -693,7 +682,7 @@ body.mobile .audio-player {
 .audio-player .note-icon {
     height: 100%;
     width: 3.8rem;
-    padding: 0.9rem;
+    padding: 1rem;
     fill: rgba(0, 0, 0, 0.5);
 }
 
@@ -705,204 +694,117 @@ body.mobile .audio-player {
     padding-right: 1rem;
 }
 
-/* Normal weight; Italic style */
-@font-face {
-    font-family: 'Mer';
-    font-weight: normal;
-    font-style: normal;
-    src: url('https://files.cargocollective.com/c1722524/M_Script.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Noto';
-    font-weight: normal;
-    font-style: normal;
-    src: url('https://files.cargocollective.com/c1722524/NotoSansKR-Regular_1.woff') format('woff');
-}
-
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-top: 1.0px solid #000;
-  border-bottom: 1.0px solid #000;
-}
-
-th,
-td {
-  text-align: left;
-  padding: 0.1rem 0.0rem 0.1rem 0.0rem;
-  border-bottom: 1.0px solid #000;
-}
-
-th {
-  border-bottom: 1.0px solid #000;
-}
-
-thead th:hover {
-  background-color: rgba(255, 255, 255, 1);
-  color: rgba(173, 173, 173, 0.8);
-  filter: blur(1px);
-}
-
-tbody tr:hover {
-  color: rgba(173, 173, 173, 0.8);
-}
-
-.responsive {
-  max-width: 100%;
-  max-height: 98vh;
-  overflow: auto;
-}
-
-.sorting,
-.sorting_asc,
-.sorting_desc {
-  cursor: pointer;
-}
-
-.sorting {
-  cursor: pointer;
-}
-
-.sorting_asc {
+.hover-title {
+    display: inline;
+    pointer-events: auto;
     cursor: pointer;
 }
 
-.sorting_desc {
-    cursor: pointer;
+.hover-image {
+    visibility: hidden;
 }
 
-.hover-images {
-  display: flex;
-  justify-content: space-around;
+body:not(.mobile) .hover-title:hover + .hover-image {
+    visibility: visible;
+    pointer-events: none;
 }
 
-.hover:hover > p {
-  display: block;
-}
-
-.hover > p {
-  font-family: "Mer", Icons;
-  font-size: 1.0rem;
-  font-style: normal;
-  text-align: left;
-  line-height: 1.0rem;
-  z-index: 1;
-  display: none;
-  position: flex-start;
-  margin-top: 0.2rem;
-  margin-bottom: 0.0rem;
-}
-
-#button {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0);
-  padding: 1.3rem 1.3rem 1.0rem 1.3rem;
-  text-align: center;
-  border-radius: 3px;
-  position: fixed;
-  bottom: 18.6rem;
-  right: 0.0rem;
-  transition: background-color 0.3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  line-height: 1.1rem;
-}
-
-#button::after {
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.1em;
-  color: rgba(255, 255, 255, 0);
-}
-#button:hover {
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-#button:active {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-#button_mo {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 3px;
-  transition: background-color 0.3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  line-height: 1.3rem;
-}
-
-#button_mo::after {
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.1em;
-  color: rgba(255, 255, 255, 0);
-}
-#button_mo:hover {
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-#button_mo:active {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-#button_mo.show {
-  opacity: 1;
-  visibility: visible;
-}
-
-.thumbnails .thumbnail > a {
-    position: relative;
-}
-
-.thumbnails .thumbnail .title {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 0.5rem 1.2rem 0.7rem 1.2rem;
-    margin: 0rem;
-    color: rgba(255, 255, 255, 1);
-    align-content: flex-start;
+.hover-image {
     display: flex;
-    position: absolute;
-    left: 0rem;
-    top: 0rem;
-    right: 0rem;
-    bottom: 0rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-22%, -50%);
     z-index: 9;
-    opacity: 0;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+/* Change width and height to scale images */
+    width: 90vw;
+    height: 90vh;
 }
 
-.thumbnails .title span {
-    margin: auto;
-    display: inline-block;
+.hover-image img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0;
 }
 
-.thumbnails .thumbnail:hover .title {
-    opacity: 1;
+/* hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+    display: none;  /* <-- change this to 'block' if you want a scroll bar you can fuck about with */
+    width: 10px;
+    height: 10px;
+    background: #0b2d1a;
+}
+::-webkit-scrollbar-thumb {
+    background: #fff;
 }
 
-body.mobile .thumbnails .thumbnail .title {
-    opacity: 1;
+header nav a:hover{font-style: italic;}
+
+.flier {
+	pointer-events: none;
+}
+
+.flier > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 50s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 60s;
+	z-index: 999999;
+}
+
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+::selection {
+  color: #000;
+  background: rgba(255, 0, 0, 1);
 }
