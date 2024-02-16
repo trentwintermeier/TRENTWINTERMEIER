@@ -1,14 +1,16 @@
 html {
-	--mobile-scale: 1.36;
-	--mobile-padding-offset: 0.29;
+	--mobile-scale: 1.6;
+	--mobile-padding-offset: 0.56;
 }
 
 body {
+	background-color: #a6987c;
 	--swatch-1: rgba(0, 0, 0, 0.85);
 	--swatch-2: rgba(0, 0, 0, 0.75);
 	--swatch-3: rgba(0, 0, 0, 0.6);
 	--swatch-4: rgba(0, 0, 0, 0.4);
     --swatch-5: rgba(0, 0, 0, 0.25);
+	--swatch-6: #ffff00;
 }
 
 body.mobile {
@@ -43,12 +45,12 @@ sup {
 
 ol {
 	margin: 0;
-	padding: 0 0 0 2.5em;
+	padding: 0 0 0 3em;
 }
 
 ul {
 	margin: 0;
-	padding: 0 0 0 2.0em;
+	padding: 0 0 0 2.2em;
 }
 
 ul.lineated {
@@ -65,85 +67,26 @@ blockquote {
 }
 
 hr {
-	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.15);
 	border: 0;
 	height: 1px;
 	display: block;
-	margin-top: 0.0rem;
-	margin-bottom: 0.5rem;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
 }
 
 .content {
-	border-color: rgba(0,0,0,.85);
+}
+
+.mobile .content {
+	border: 0;
+	margin: 0;
 }
 
 bodycopy {
-    font-size: 1.3rem;
+	font-size: 1rem;
 	font-weight: 400;
-	color: rgba(0, 0, 0, 0.66);
-	font-family: "Diatype Variable";
-	font-style: normal;
-	line-height: 1.25;
-	letter-spacing: 0em;
-	display: block;
-	font-variation-settings: 'slnt' 0, 'MONO' 0;
-}
-
-bodycopy a {
-    color: rgba(0, 0, 0, 0.66);
-	border-bottom: 0px solid rgba(127, 127, 127, 0.2);
-	text-decoration: none;
-}
-
-bodycopy a:hover {
-}
-
-h1 {
-    font-size: 5.4rem;
-	font-weight: 700;
-	color: rgba(0, 0, 0, 0.85);
-	font-family: "Diatype Variable";
-	font-style: normal;
-	line-height: 1.1;
-	letter-spacing: -0.02em;
-	margin: 0;
-	font-variation-settings: 'slnt' 0, 'MONO' 0;
-}
-
-h1 a {
-    color: rgba(0, 0, 0, 0.85);
-	border-bottom: 0px solid rgba(127, 127, 127, 0.2);
-	text-decoration: none;
-}
-
-h1 a:hover {
-}
-
-h2 {
-    font-size: 2.2rem;
-	font-weight: 500;
-	color: rgba(0, 0, 0, 0.85);
-	font-family: "Diatype Variable";
-	font-style: normal;
-	line-height: 1.2;
-	letter-spacing: 0em;
-	margin: 0;
-	font-variation-settings: 'slnt' 0, 'MONO' 0;
-}
-
-h2 a {
-    color: rgba(0, 0, 0, 0.85);
-	border-bottom: 0px solid rgba(127, 127, 127, 0.2);
-	text-decoration: none;
-}
-
-h2 a:hover {
-}
-
-.caption {
-    font-size: 1rem;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.75);
 	font-family: "Diatype Mono Variable";
 	font-style: normal;
 	line-height: 1.3;
@@ -152,10 +95,74 @@ h2 a:hover {
 	font-variation-settings: 'slnt' 0, 'MONO' 1;
 }
 
-.caption a {
-    color: rgba(0, 0, 0, 0.6);
-	border-bottom: 0px solid rgba(127, 127, 127, 0.2);
+bodycopy a {
+	color: #0033ff;
+	text-decoration: underline;
+}
+
+bodycopy a:hover {
+}
+
+h1 {
+	font-family: "Diatype Variable";
+	font-style: normal;
+	font-weight: 800;
+	margin: 0;
+	font-size: 11rem;
+	line-height: 0.85;
+	color: rgba(0, 0, 0, 0.75);
+	letter-spacing: -0.025em;
+	font-variation-settings: 'slnt' 0, 'MONO' 0;
+}
+
+.mobile h1 {
+	font-size: 8rem;
+}
+
+h1 a {
+	color: rgba(0, 0, 0, 0.75);
 	text-decoration: none;
+}
+
+h1 a:hover {
+}
+
+h2 {
+	font-family: "Diatype Variable";
+	font-style: normal;
+	font-weight: 500;
+	margin: 0;
+	color: rgba(0, 0, 0, 0.75);
+	font-size: 2rem;
+	line-height: 1.1;
+	letter-spacing: 0em;
+	font-variant-numeric: oldstyle-nums;
+	font-variation-settings: 'slnt' 0, 'MONO' 0;
+}
+
+h2 a {
+	color: rgba(0, 0, 0, 0.75);
+	text-decoration: none;
+}
+
+h2 a:hover {
+}
+
+.caption {
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.75);
+	font-family: "Diatype Semi-Mono Variable";
+	font-style: normal;
+	line-height: 1.2;
+	letter-spacing: 0em;
+	display: block;
+	font-variation-settings: 'slnt' 0, 'MONO' 0.5;
+}
+
+.caption a {
+	color: #0033ff;
+	text-decoration: underline;
 }
 
 .caption a:hover {
@@ -180,23 +187,33 @@ gallery-justify .caption {
 }
 
 .page {
-	justify-content: flex-start;
+	justify-content: center;
+	min-height: var(--viewport-height);
 }
 
 .page-content {
-	width: 100%;
-	padding: 3rem;
+	padding: 2rem;
 	text-align: left;
-	padding-top: 2.5rem;
+	align-items: flex-start;
+	border-width: 0.1rem;
+	border-color: rgba(0,0,0,.85);
+	border-style: solid;
 }
 
-.mobile [id] .page-layout {
-	max-width: 100%;
+.mobile [id] .page-content {
+	border: 0;
+	border-radius: 0;
 }
 
 .page-layout {
 	align-items: flex-start;
-	max-width: 70%;
+	max-width: 66%;
+	padding: 3rem;
+}
+
+.mobile [id] .page-layout {
+	padding: 0;
+	max-width: 100%;
 }
 
 media-item::part(media) {
