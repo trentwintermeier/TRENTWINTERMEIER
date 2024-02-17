@@ -1133,19 +1133,26 @@ body {
     backdrop-filter: grayscale(clamp(0, var(--colorfilter-grayscale, 0), var(--colorfilter-color-opacity, 0))) brightness(var(--colorfilter-brightness, 1)) contrast(var(--colorfilter-contrast, 1)) invert(var(--colorfilter-invert, 0));
     -webkit-backdrop-filter: grayscale(clamp(0, var(--colorfilter-grayscale, 0), var(--colorfilter-color-opacity, 0))) brightness(var(--colorfilter-brightness, 1)) contrast(var(--colorfilter-contrast, 1)) invert(var(--colorfilter-invert, 0));
     z-index: 9994;
-    transform: translateZ(0);
-    animation: loopTranslate 0.5s steps(2, end) infinite;
+
+}
+
+
+.colorfilter-base.safari,
+.colorfilter-color.safari,
+#cargo-dotsite.safari {
+    transform: translateZ(0px);
+    animation: loopTranslate 0.5s steps(2, end) infinite;    
 }
 
 @keyframes loopTranslate {
     0% {
-        transform: translateZ(0);
+        transform: translateZ(0px);
     }
     50% {
         transform: translateZ(1px);
     }
     100% {
-        transform: translateZ(0);
+        transform: translateZ(0px);
     }
 }
 
